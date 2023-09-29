@@ -19,7 +19,7 @@ from PIL import Image
 tracemalloc.start()
 
 # DECLARATIONS
-scretNumber = -1 # Range: 0 -- 10
+scretNumber = 3 # Range: 0 -- 10
 playerName = "" # empty string
 playerScore = 0
 cpuScore = 0
