@@ -1,0 +1,57 @@
+#data Types and Operators, Zac Scott, V0.0
+
+myInt = 24
+myFloat = -11.0
+
+#Arithmetic operators -- PEMDAS
+print(myInt + 24) # Addition
+print(myFloat - 24) # Subtration
+print(myFloat * 24) # Multiplication 
+print(myInt / 24 ) # Division 
+print(myInt ** 2) # Exponents 
+
+# modulus -- Divides, then returns remainder
+print(48 % 24)
+# commonly used to determine even/odd numbers 
+
+# Assignment Operators
+myString = "blah blah blah. "
+x = 0
+# = means " assignment the variable on the left the value on the right."
+# = throws out any previously assigned valuue!
+
+# addition assignment operator 
+myString += "i need to buy some eggs. "
+x += 2
+# += means "keep the current value and add the new value from the right."
+
+print(myString)
+print(x)
+
+# comparison operators -- return true or false 
+print(1 > 7) # greater than 7 
+print(24 >= 1) # greater than or equal to
+print(0 < -24) # less than 
+print(-24 <= 5) # less than or equal to 
+print(3 == 24) # is equal to
+print(24 != -99) # not equal to
+
+# locical operators 
+# and requires all conditions to be true for overall true 
+print( 8 > 3 and 4 < 12 ) # (true and true ) == true 
+print( 8 > 3 and 4 < 2 ) # (true and false ) == false 
+print( 8 > 3 and 4 > 2 and 1 != 2 and 5 == 5) 
+
+# or requires at least one condition to be true for overall true 
+print(3 > 7 or 5 < 11 ) # (false or true) == true 
+print( -11 > -5 or 15 < 11 ) # (false or false ) == false 
+
+
+# not -- 'oppsite' value 
+favColor = "green"
+print(favColor == not "blue")
+
+print(5 > 3 and 1 != 2 and 4 < 3)
+# ture and true and false 
+
+print(keyUp == True and KeyLeft == True or Keydown == False)
