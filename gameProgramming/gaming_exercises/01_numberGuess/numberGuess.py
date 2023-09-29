@@ -34,7 +34,7 @@ loserSound = 'sfx/numberGuess/gameOver.wav'
 winnerSound = None
 
 imageWin = Image.open('img/numberGuess?win.jpg')
-imageloss = Image.open()
+imageloss = Image.open('img/numberGuess?loss.jpg')
 
 
 print("""
