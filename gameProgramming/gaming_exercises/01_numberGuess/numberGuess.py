@@ -34,7 +34,7 @@ loserSound = 'sfx/numberGuess/gameOver.wav'
 winnerSound = None
 
 imageWin = Image.open('img/numberGuess?win.jpg')
-winnerSound = None
+imageloss = Image.open()
 
 
 print("""
@@ -81,7 +81,7 @@ while playerScore != 3 and cpuScore != 3:
                 print("Your guess is too high!\n")
         numGuesses += 1
         
-    if playerGuess != secretNumber:
+    if playerGuess != secrectNumber:
         print("You did not guess correctly before running out of gesses, the CPU won")
         winsound.PlaySound(loserSound, winsound.SND_FILENAME)
         cpuScore += 1
