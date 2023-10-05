@@ -17,8 +17,8 @@
 # FIXED INVENTORY SYSTEM 
 weaponList = [
     False, # sword 
-    False, # gun
-    False, # belt
+    True, # gun
+    True, # belt
     False, # kniife
     False  # bomb
 ]
@@ -26,3 +26,16 @@ weaponList = [
 # the location of each element in the list is the INDEX
 # first element is index[0]
 # shortcut to last element is index[-1]
+weaponNum = 0
+while weaponNum < len(weaponList): 
+    if weaponList[0] == True:
+        print("Your character is equipped with a sword.\n")
+    if weaponList[1] == True:
+        print("Your character is equipped with a gun.\n")
+    if weaponList[2] == True:
+        print("Your character is equipped with a belt.\n")
+    if weaponList[3] == True:
+        print("Your character is equipped with a knife.\n")
+    if weaponList[4] == True:
+        print("Your character is equippped with a bomb.\n")
+    weaponNum += 1
