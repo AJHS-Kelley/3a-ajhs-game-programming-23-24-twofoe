@@ -52,3 +52,30 @@ if item in doorKeys:
     print(f"You have the {item} key!\n")
 else:
     print(f"You do not have the {item} key.")
+
+
+
+
+enemyBase = [
+    "Troll",
+    "Zombie",
+    "Vanpire",
+    "Dwarfs",
+    "Dragon"
+]
+
+enemyType = [
+    "Warrior",
+    "Wizard",
+    "Assassin",
+    "Berserker",
+    "Paladin"
+]
+
+enemyPrefix = [
+    "Fire-Breathing",
+    "Gargantuan",
+    "Invisible",
+    "Vampiric",
+    "Exploding"
+]
