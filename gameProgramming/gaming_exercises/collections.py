@@ -77,5 +77,18 @@ enemyPrefix = [
     "Gargantuan",
     "Invisible",
     "Vampiric",
-    "Exploding"
+    "Exploding",
 ]
+
+mport random
+
+# Index Range (0, 4)
+enemyNames = []
+while len(enemyNames) < 15:
+    enemyBaseGen = enemyBase[random.randint(0,4)]
+    enemyTypeGen = enemyType[random.randint(0,4)]
+    enemmyPrefixGen = enemyPrefix[random.randint(0,4)]
+    newEnemy = enemyPrefixGen + " " + enemyBaseGen + " " + enemyTypeGen
+    enemyNames.append(newEnemy)
+
+print(enemynames)
