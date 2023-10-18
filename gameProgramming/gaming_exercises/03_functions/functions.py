@@ -58,5 +58,7 @@ def genStat(): # Roll 4d6, drop the lowest
     rolls[3] = rollDice(1, 6)
     
     rolls.sort()
-    
-    genStat() 
+
+    print(rolls)
+
+genStat() 
