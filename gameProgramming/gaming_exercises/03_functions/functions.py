@@ -49,3 +49,14 @@ def rolldice(numRoll, sizeRoll):
 
 # print(d4Sum)
 # print(d20Sum)
+
+def genStat(): # Roll 4d6, drop the lowest
+    rolls = [0, 0, 0, 0]
+    rolls[0] = rollDice(1, 6)
+    rolls[1] = rollDice(1, 6)
+    rolls[2] = rollDice(1, 6)
+    rolls[3] = rollDice(1, 6)
+    
+    rolls.sort()
+    
+    genStat() 
