@@ -63,8 +63,14 @@ def genStat(): # Roll 4d6, drop the lowest
     return sum(rolls)
 
 count = 0
-while count < 10000:
+while count < 1000000:
     test = genStat()
-    if test >
+    if test > 18:
+        print("You have exceed the maximum roll.\n")
+    if test < 3:
+        print("You have not met the minimum roll.\n")
+    count += 1
+print("If no error messages, all stats are within range.\n")
+
 strength = genStat()
 print(f"Your strength: {strength}\n") 
