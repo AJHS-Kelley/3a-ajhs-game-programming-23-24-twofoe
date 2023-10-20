@@ -51,16 +51,20 @@ def rollDice(numRoll, sizeRoll):
 # print(d20Sum)
 
 def genStat(): # Roll 4d6, drop the lowest
-    rolls = [0, 0, 0, 0]
-    rolls[0] = rollDice(1, 6)
-    rolls[1] = rollDice(1, 6)
-    rolls[2] = rollDice(1, 6)
-    rolls[3] = rollDice(1, 6)
+    rolls = []
+    count = 0
+    while count < 4: 
+        rolls.append(rollDice(1,6))
+        count += 1 
 
-    print(rolls)
+    # sort, drop lowest 
     rolls.sort()
     rolls.pop(0)
-    print(rolls)
-    print(sum(rolls))
-    
-genStat() 
+    return sum(rolls)
+
+count = 0
+while count < 10000:
+    test = genStat()
+    if test >
+strength = genStat()
+print(f"Your strength: {strength}\n") 
