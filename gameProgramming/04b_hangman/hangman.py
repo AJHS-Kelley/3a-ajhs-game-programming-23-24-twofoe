@@ -47,7 +47,8 @@ HANGMAN_BOARD = ['''
          |        
        =====''']
 
-def get
+def getRandomWord(wordList):
+    pass
 
 # i = 0
 # while i < len(HANGMAN_BOARD):
