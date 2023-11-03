@@ -75,7 +75,7 @@ def displayBoard(missedLetters, correctLetters, secretWord):
             
     for letter in blanks:
         print(letter, end = ' ')
-    print()   
+    print()
 
 # i = 0
 # while i < 10:
