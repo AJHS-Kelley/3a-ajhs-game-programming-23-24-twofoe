@@ -95,4 +95,13 @@ def getGuess(alreadyGuessed):
         
 def playAgain():
     print('Do you want to play again. Yes or No, then press enter.')
-    return input().lower().startswith('y') # Return True/False based on input       
+    return input().lower().startswith('y') # Return True/False based on input
+
+# START THE ACTUAL GAME
+print('Let\'s  Play Hangman!') # \ ESCAPES special characters.
+missedLetters = ''
+correctLetters = ''
+secretWord = getRandomWord(wordList)
+print("Testing Secret Word: " + secretWord)
+gameIsDone = False 
+      
