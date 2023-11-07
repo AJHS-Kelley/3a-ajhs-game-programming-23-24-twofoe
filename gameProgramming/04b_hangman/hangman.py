@@ -1,5 +1,5 @@
 import random 
-wordList = 'deal bill real steal less best test rest desk perk work dirt turn bro will teal lee bee tea chicken football sports fat lunch school middle low black blue sea'.split()
+wordList = 'deal bill real steal less best lilpoppa whiteboy yeezy zachariah slot conerback nickle dummy scott teal williams jackson tea chicken football sports fat lunch school middle low black blue sea'.split()
 #.split() will split a string into separate elements, by default based on SPACE
 
 # VARIABLE_NAMES that are ALL CAPS AREE CONSTANTS and not meant to change
@@ -111,7 +111,7 @@ while True: # 99% of the time the loop is done this way
     # DISPLAY BOARD
     displayBoard(missedLetters, correctLetters, secretWord)
 
-    guess = getGuess(missedLetters = correctLetters)
+    guess = getGuess(missedLetters + correctLetters)
     
     if guess in secretWord: # Is the guess in the secretWord? 
         correctLetters = correctLetters + guess
@@ -132,5 +132,13 @@ while True: # 99% of the time the loop is done this way
             displayBoard(missedLetters, correctLetters, secretWord)
             print('You have lost due to using all guesses.\n')
             print('The secret word was ' + secretWord)
-            gameIsDone = True 
+            gameIsDone = True
 
+    if gameIsDone:
+        if playAgain():
+            secretWord = getRandomWord(wordList)
+            missedLetters = ''
+            correctLetters = ''
+            gameIsDone = False
+        else: 
+            break  
