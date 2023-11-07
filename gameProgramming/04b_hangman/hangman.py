@@ -1,5 +1,5 @@
 import random 
-wordList = 'lilWayne meekMill lilDurk money pineforst icecream lilPoppa whiteboy yeezy zachariah slot conerback nickle dummy scott youngboy williams jackson tea chicken football sports gherbo rylo noCap youngThug kodakBlack partynextdoor jCole rodWave'.split()
+wordList = 'lilwayne meekmill lildurk money pineforst icecream lilpoppa whiteboy yeezy zachariah slot conerback nickle dummy scott youngboy williams jackson tea chicken football sports gherbo rylo nocap youngthug kodakblack partynextdoor jcole rodwave'.split()
 #.split() will split a string into separate elements, by default based on SPACE
 
 # VARIABLE_NAMES that are ALL CAPS AREE CONSTANTS and not meant to change
