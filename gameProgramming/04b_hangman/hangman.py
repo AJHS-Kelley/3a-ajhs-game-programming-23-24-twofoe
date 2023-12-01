@@ -1,6 +1,7 @@
 import random 
 wordList = 'lilwayne meekmill lildurk money pineforst icecream lilpoppa whiteboy yeezy zachariah slot conerback nickle dummy scott youngboy williams jackson tea chicken football sports gherbo rylo nocap youngthug kodakblack partynextdoor jcole rodwave'.split()
 #.split() will split a string into separate elements, by default based on SPACE
+# code review by Aidan Moody
 
 # VARIABLE_NAMES that are ALL CAPS AREE CONSTANTS and not meant to change
 HANGMAN_BOARD = ['''
